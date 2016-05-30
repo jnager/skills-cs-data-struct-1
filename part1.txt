@@ -1,0 +1,65 @@
+Discussion Questions
+
+Part 1: Discussion Questions
+
+Runtime
+
+1. When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches the size of infinity. What is the workload of a function that takes in a list of integers and returns a new list of the even integers?
+
+>> O(n)
+
+
+Order the following runtimes in ascending order by efficiency as n approaches infinity:
+
+O(log n),
+O(n2)
+O(n log n)
+O(n)
+O(2n)
+O(1)
+
+>> O(1), O(log n), O(n) or O(2n), O(n log n), O(n2)
+
+
+Stacks and Queues
+
+In the following cases, would a stack or queue be an appropriate data structure?
+The process of loading and unloading pallets onto a flatbed truck
+>> Stack
+
+Putting bottle caps on bottles of beer as they roll down an assembly line
+>> Queue (Maybe? Not sure I understand the question)
+
+Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+>> For parsing, stack
+
+Describe 2 more examples of when a queue would be an appropriate data structure.
+>> Breadth First Search, processing ticket purchases
+
+Describe 2 more examples of when a stack would be an appropriate data structure.
+>> Depth First Search, elevator path
+
+
+Linked Lists
+
+Given the below linked list, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+>> The nodes of the pictured LinkedList are the full elements of conjoined boxes (e.g. "Apple" and the next pointer to the right of the box containing "Apple." Same for Berry and Cherry.) The data for the three nodes are the strings "Apple," "Berry," and "Cherry." The head is the node containing the data of "Apple." The tail is the node containing the data of "Cherry."
+
+What’s the difference between a doubly and singly linked list?
+>> The nodes of a doubly linked list contain pointers to their predecessors as well as the "next" node. This allows you to traverse the list in two directions.
+
+Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+>> Because you can simply add a new node by setting the "next" pointer of the tail to the new node. You do not need to traverse from the head to find the final node (onto which you can then append the last node.)
+
+
+
+Trees
+
+Given the above tree, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)?
+>> food > Italian > Indian > Mexican > lasagna > pizza > tikka masala > saag > burrito
+
+Given the above tree, in what order would a Depth First Search algorithm visit each node until finding Chicago-style (starting at food)?
+>> food > Italian > lasagna > pizza > thin crust > Chicago-style
+
+How is a binary search tree different from other trees?
+>> The nodes of a binary search tree always have two children. The child to the left is less than the value of the node and the child to the right is greater than the value of the node. This makes searching a binary tree O(log n) because you can disregard half the tree at each node (i.e. only need consider either the left or right sub-tree in your search, depending on if your search value is greater than or less than the node in question.)
